@@ -1,0 +1,6 @@
+# records = "C:/Users/Varun Nair/Desktop/sample-S2-records"
+records = "E:/SemanticTest1/sample-S2-records"
+#test="E:/SemanticTest"
+#test1="E:/SemanticTest1"
+test1="D:/IR Dataset/IRsubdataset/"
+StopwordDir="C:/Users/Tigmanshu/Documents/IRWeb/ssProject/Lucene/stopword.txt"

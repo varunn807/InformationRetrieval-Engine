@@ -1,0 +1,104 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+Design by TEMPLATED
+http://templated.co
+Released for free under the Creative Commons Attribution License
+
+Name       : Forthright  
+Description: A two-column, fixed-width design with dark color scheme.
+Version    : 1.0
+Released   : 20130409
+
+-->
+{% load static %}
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Forthright by TEMPLATED</title>
+<link href="http://fonts.googleapis.com/css?family=Roboto+Condensed|Open+Sans:400,300,700|Yesteryear" rel="stylesheet" type="text/css" />
+<link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+</head>
+<body>
+
+<div id="header-wrapper">
+	<div id="header">
+		<div id="logo" style="color:#34495e">
+			<h1> Hits Algorithm Search Results</h1>
+		</div>
+	</div>
+</div>
+<div id="wrapper" style="background-color: #bdc3c7;">
+	<!-- end #header -->
+	<div id="page">
+		<div id="page-bgtop">
+			<div id="page-bgbtm">
+				<div id="content" style="background-color: #2980b9 !important;">
+
+					{% for x in all_scores %}
+					<div class="post" style="background-color: #ecf0f1;">
+						<h2 class="title" style="color: #2980b9">{{x.title}}</h2>
+						<!--<p class="meta"><span class="date"> May 10, 2013 </span><span class="posted">Author:Someone</span></p>-->
+						<!--<div style="clear: both;">&nbsp;</div>-->
+						<div class="entry">
+							<p style="color:#2c3e50;">{{x.abstract}}</p>
+						</div>
+					</div>
+					{%endfor%}
+
+
+					<div style="clear: both;">&nbsp;</div>
+				</div>
+				<!-- end #content -->
+
+				<!-- end #sidebar -->
+				<div style="clear: both;">&nbsp;</div>
+			</div>
+		</div>
+	</div>
+	<!-- end #page -->
+</div>
+
+<div id="logo" style="color:#34495e">
+			<h1> Page Rank Algorithm Search Results</h1>
+		</div>
+
+<div id="wrapper" style="background-color: #bdc3c7;">
+	<!-- end #header -->
+	<div id="page">
+		<div id="page-bgtop">
+			<div id="page-bgbtm">
+				<div id="content" style="background-color: #2980b9 !important;">
+
+					{% for x in pr_scores %}
+					<div class="post" style="background-color: #ecf0f1;">
+						<h2 class="title" style="color: #2980b9">{{x.title}}</h2>
+						<!--<p class="meta"><span class="date"> May 10, 2013 </span><span class="posted">Author:Someone</span></p>-->
+						<!--<div style="clear: both;">&nbsp;</div>-->
+						<div class="entry">
+							<p style="color:#2c3e50;">{{x.abstract}}</p>
+						</div>
+					</div>
+					{%endfor%}
+
+
+					<div style="clear: both;">&nbsp;</div>
+				</div>
+				<!-- end #content -->
+
+				<!-- end #sidebar -->
+				<div style="clear: both;">&nbsp;</div>
+			</div>
+		</div>
+	</div>
+	<!-- end #page -->
+</div>
+
+
+
+
+</body>
+</html>
